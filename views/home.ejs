@@ -10,6 +10,15 @@
         <a href="/createBlog">Create New Blog</a>
     </button>
 </div>
+
+<script>
+    const divArray = document.querySelectorAll(".content div");
+    for(let i = 0; i < divArray.length; i++){
+        divArray[i].addEventListener("click", (e)=>{
+            console.log(e.target);
+        })
+    }
+</script>
 </body>
 
 <%- include('footer'); -%>
