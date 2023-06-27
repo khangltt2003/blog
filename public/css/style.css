@@ -1,0 +1,69 @@
+:root{
+    --big-text: 2.5rem;
+    --small-text: 1.5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    padding: 0 10%;
+}
+
+.nav-bar p{
+    font-size: var(--big-text);
+    font-weight: bold;
+}
+
+.nav-bar ul{
+    list-style: none;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 10px;
+    transition: 0.5s;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    font-size: var(--small-text);
+    font-weight: bold;
+}
+
+a:visited{
+    color: black;
+}
+
+.nav-bar ul li:hover{
+    background-color: rgb(225, 225, 225);
+}
+
+.content{
+    padding: 10px 10%;
+}
+
+.content div{
+    margin-bottom: 20px;
+}
+
+.content div h2{
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,12 @@
+<%- include('header'); -%>
+<div class="content">
+    <% for(let i = 0; i < blogsArray.length; i++){ %>
+        <div>
+            <h2> <%=blogsArray[i].blogTitle %></h2>
+            <p><%=blogsArray[i].content %></p>
+        </div>
+    <%} %>
+</div>
+</body>
+
+<%- include('footer'); -%>
