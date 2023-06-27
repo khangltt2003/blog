@@ -1,14 +1,14 @@
 <%- include('header'); -%>
 <form action="/createBlog" method="POST">
-<div class="content">
-    <h2> <%=Title%></h2>
-        <h3>Title:</h3>
-        <textarea class="titleInput" type="text" placeholder="Enter Blog's Title" name="newBlogTitle"></textarea>
-        <h3>Content:</h3>
-        <textarea class="contentInput" type="text" placeholder="Enter Blog's Content" name="newBlogContent"></textarea>
-        <br>
-        <button type="submit">Submit</button>
-</div> 
+    <div class="content">
+        <h2> <%=Title%></h2>
+            <h3>Title:</h3>
+            <textarea class="titleInput" type="text" placeholder="Enter Blog's Title" name="newBlogTitle"></textarea>
+            <h3>Content:</h3>
+            <textarea class="contentInput" type="text" placeholder="Enter Blog's Content" name="newBlogContent"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+    </div> 
 </form>
 </body>
 <%- include('footer'); -%>
