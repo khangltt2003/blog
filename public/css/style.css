@@ -7,7 +7,9 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 .nav-bar{
     display: flex;
@@ -50,6 +52,10 @@ a:visited{
 
 .content{
     padding: 10px 10%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .content div{
@@ -58,6 +64,55 @@ a:visited{
 
 .content div h2{
     margin-bottom: 10px;
+}
+
+button{
+    align-self: center;
+    padding: 20px 30px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: whitesmoke;
+
+}
+
+button a{
+    text-decoration: none;
+}
+
+.titleInput{
+    height: 50px;
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: var(--small-text);
+}
+
+form h3{
+    margin-top: 20px;
+}
+
+.titleInput{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.contentInput{
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
 footer{

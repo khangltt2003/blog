@@ -34,6 +34,28 @@ app.get('/', (req,res)=>{
     res.render('home',{Title: "Home", blogsArray: blogsArray});
 })
 
+app.get('/about', (req,res)=>{
+    res.render('about',{Title: "About"});
+})
+
+app.get('/contact', (req,res)=>{
+    res.render('contact',{Title: "Contact"});
+})
+
+app.get('/createBlog', (req,res)=>{
+    res.render('createBlog',{Title: "Create New Blog"});
+})
+
+
+app.post('/createBlog', (req, res)=>{
+    console.log(req.body);
+    let newBlog = {
+        blogTitle: req.body.newBlogTitle,
+        content: req.body.newBlogContent
+    }
+    blogsArray.push(newBlog);
+    res.redirect('/');
+})
 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
