@@ -60,7 +60,7 @@ app.post('/createBlog', (req, res)=>{
 app.get('/post/:title', (req, res)=>{
     console.log(req.params);
     for(let i = 0; i < blogsArray.length; i++){
-        if(blogsArray[i].blogTitle.trim().toLowerCase() === req.params.title){
+        if(blogsArray[i].blogTitle === req.params.title){
             res.render('post', {
                 Title: blogsArray[i].blogTitle,
                 blogTitle: blogsArray[i].blogTitle,
