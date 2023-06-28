@@ -10,7 +10,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
+a{
+    color: black;
+}
 .nav-bar{
     display: flex;
     flex-direction: row;
@@ -33,7 +35,6 @@
     display: inline-block;
     text-decoration: none;
     padding: 20px 10px;
-    transition: 0.5s;
 }
 
 .nav-bar ul li a{
