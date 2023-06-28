@@ -3,7 +3,7 @@
     <% for(let i = 0; i < blogsArray.length; i++){ %>
         <div>
             <h2> <%=blogsArray[i].blogTitle %></h2>
-            <p><%=blogsArray[i].content %></p>
+            <p><%=blogsArray[i].blogContent %> ... <a href="/post/<%=blogsArray[i].blogTitle.trim().toLowerCase() %>">read more</a></p>
         </div>
     <%} %>
     <button>
