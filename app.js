@@ -57,7 +57,7 @@ app.post('/createBlog', (req, res)=>{
     res.redirect('/');
 })
 
-app.get('/post/:title', (req, res)=>{
+app.get('/post/:title', (req, res)=>{ //route param
     console.log(req.params);
     for(let i = 0; i < blogsArray.length; i++){
         if(blogsArray[i].blogTitle === req.params.title){
