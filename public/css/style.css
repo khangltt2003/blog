@@ -1,13 +1,13 @@
-:root{
-    --big-text: 2rem;
-    --small-text: 1.5rem;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --big-text: 2rem;
+    --small-text: 1.5rem;
 }
 
 a{
