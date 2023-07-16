@@ -23,9 +23,10 @@ a{
     padding: 0 10%;
 }
 
-.nav-bar p{
+.nav-bar a{
     font-size: var(--big-text);
     font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-bar ul{
@@ -55,7 +56,7 @@ a:visited{
 
 .content{
     padding: 10px 10%;
-    min-height: 80vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -74,6 +75,7 @@ a:visited{
 .content .blog-container h2{
     margin-bottom: 10px;
 }
+
 
 .button-container{
     display: flex;
