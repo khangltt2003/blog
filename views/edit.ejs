@@ -1,0 +1,16 @@
+<%- include('partials/header'); -%>
+
+<form action="/post/<%=blog.title%>/edit" method="POST">
+    <div class="content">
+        <h2> <%=Title%></h2>
+            <h3>Title:</h3>
+            <input class="titleInput" type="text" name="newBlogTitle" autocomplete="off" value="<%=blog.title%>">
+            <h3>Content:</h3>
+            <textarea class="contentInput" type="text" name="newBlogContent"><%=blog.content%></textarea>
+            <br>
+            <button type="submit">Submit</button>
+    </div>
+    <input type="hidden" name="_id" value="<%=blog._id%>"> 
+</form>
+</body>
+<%- include('partials/footer');-%>

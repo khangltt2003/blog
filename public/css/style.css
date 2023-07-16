@@ -11,8 +11,6 @@
     --background: linear-gradient(45deg, rgba(0, 102, 255, 0.367), rgba(117, 172, 255, 0.367), rgba(0, 102, 255, 0.367));
 }
 
-
-
 a{
     color: black;
 }
@@ -63,19 +61,27 @@ a:visited{
     margin-top: 20px;
 }
 
-.content div{
+.content .blog-container{
     margin-bottom: 20px;
     padding: 20px;
     transition: 0.5s;
 }
 
-.content div:hover{
+.content .blog-container:hover{
     background-color: rgba(117, 172, 255, 0.367);
 }
 
-.content div h2{
+.content .blog-container h2{
     margin-bottom: 10px;
 }
+
+.button-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+
 
 button{
     align-self: center;
@@ -111,7 +117,7 @@ textarea, input{
 }
 
 .contentInput{
-    height: 100px;
+    min-height: 200px;
 }
 
 footer{
@@ -122,7 +128,7 @@ footer{
     background: var(--background);
 }
 
-
 a{
     background-color: linear-gradient;
 }
+

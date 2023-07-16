@@ -1,9 +1,9 @@
 <%- include('partials/header'); -%>
 <div class="content">
     <% for(let i = 0; i < blogsArray.length; i++){ %>
-        <div>
-            <h2> <%=blogsArray[i].blogTitle %></h2>
-            <p><%=blogsArray[i].blogContent.substring(0, 300) %> ... <a href="/post/<%=blogsArray[i].blogTitle %>">read more</a></p>
+        <div class="blog-container">
+            <h2> <%=blogsArray[i].title %></h2>
+            <p><%=blogsArray[i].content.substring(0, 300) %> ... <a href="/post/<%=blogsArray[i].title %>">read more</a></p>
        </div>                              <!--  truncate string  -->
     <%} %>
     <button>
