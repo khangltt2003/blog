@@ -92,30 +92,30 @@ app.post('/createBlog', (req, res)=>{
     saveItem().then(()=> res.redirect('/'))
 })
 
-app.get('/post/:title', (req, res)=>{ //route param
+app.get('/post/:_id', (req, res)=>{ //route param
     let option = {
-        title: req.params.title
+        _id: req.params._id
     }
     const targetBlog = getData(option).then((targetBlog)=>{
         res.render('post',{Title: req.params.title, blog: targetBlog[0]});
     });
 })
 
-app.get('/post/:title/edit', (req,res)=>{
+app.get('/post/:_id/edit', (req,res)=>{
     let option = {
-        title: req.params.title
+        _id: req.params._id
     }
     const targetBlog = getData(option).then((targetBlog)=>{
         res.render('edit',{Title: "Edit Blog", blog: targetBlog[0]});
     });
 })
 
-app.post('/post/:title/edit',(req,res)=>{
+app.post('/post/:_id/edit',(req,res)=>{
     const newTitle = req.body.newBlogTitle;
     const newContent = req.body.newBlogContent;
     const _id = req.body._id;
     findAndUpdateBlog(_id, newTitle, newContent).then(()=>{
-        res.redirect("/post/" + newTitle);
+        res.redirect("/post/" + _id);
     })
 })
 
